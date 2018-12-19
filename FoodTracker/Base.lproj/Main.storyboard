@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4U7-ad-aFh">
-                                <rect key="frame" x="0.0" y="21" width="375" height="586"/>
+                                <rect key="frame" x="0.0" y="21" width="375" height="663"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="emP-KH-ZTH">
-                                        <rect key="frame" x="20" y="48" width="151" height="126"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="emP-KH-ZTH">
+                                        <rect key="frame" x="8" y="28" width="359" height="96.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyS-e8-rYZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="151" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="151" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="151" id="kmu-HC-PxU"/>
                                                     <constraint firstAttribute="height" constant="50" id="rrK-xX-lzJ"/>
@@ -35,13 +35,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jvg-zy-Is6">
-                                                <rect key="frame" x="0.0" y="58" width="151" height="30"/>
+                                                <rect key="frame" x="0.0" y="28.5" width="359" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIM-pq-T4t">
-                                                <rect key="frame" x="0.0" y="96" width="151" height="30"/>
+                                                <rect key="frame" x="0.0" y="66.5" width="151" height="30"/>
                                                 <state key="normal" title="Set Default Label Text"/>
                                             </button>
                                         </subviews>
@@ -51,6 +51,12 @@
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="emP-KH-ZTH" secondAttribute="trailing" id="NFP-H8-EAJ"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="emP-KH-ZTH" secondAttribute="bottom" constant="530.5" id="ZgM-LC-Cin"/>
+                                    <constraint firstItem="emP-KH-ZTH" firstAttribute="leading" secondItem="4U7-ad-aFh" secondAttribute="leadingMargin" id="gZL-QP-ktM"/>
+                                    <constraint firstItem="emP-KH-ZTH" firstAttribute="top" secondItem="4U7-ad-aFh" secondAttribute="topMargin" constant="20" id="rQt-tn-WtH"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
